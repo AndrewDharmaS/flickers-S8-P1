@@ -37,7 +37,11 @@ const Person: NextPage = () => {
   };
 
   const loadMore = async () => {
-    const newData: any = await imdbAPI.searchPersons(query, adult, page + 1);
+    const newData: any = await imdbAPI.searchPersons(
+      lastQuery,
+      adult,
+      page + 1
+    );
     // console.log(newData);
     const sendPerson = personData;
     sendPerson.results = [...personData.results, ...newData.results];
@@ -54,7 +58,7 @@ const Person: NextPage = () => {
       setPersonData(data);
     };
     getPersonWeeks();
-  }, [query, adult, page]);
+  }, [adult, page]);
   if (personData) {
     return (
       <section className={styles["persons-page"]}>
@@ -67,7 +71,7 @@ const Person: NextPage = () => {
                 <span>
                   We found {totalResults}{" "}
                   {totalResults > 1 ? "entries " : "entry "}
-                  for keywords {'"' + query + '"'}.
+                  for keywords {'"' + lastQuery + '"'}.
                 </span>
               ) : (
                 <span>We found no entry for keywords {'"' + query + '"'}.</span>

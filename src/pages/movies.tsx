@@ -37,7 +37,7 @@ const Movie: NextPage = () => {
   };
 
   const loadMore = async () => {
-    const newData: any = await imdbAPI.searchMovies(query, adult, page + 1);
+    const newData: any = await imdbAPI.searchMovies(lastQuery, adult, page + 1);
     // console.log(newData);
     const sendMovie = movieData;
     sendMovie.results = [...movieData.results, ...newData.results];
@@ -60,7 +60,7 @@ const Movie: NextPage = () => {
     };
     getMovieWeeks();
     getAllGenres();
-  }, [adult, page, query]);
+  }, [adult, page]);
   if (movieData && allGenres) {
     return (
       <section className={styles["movies-page"]}>
@@ -73,7 +73,7 @@ const Movie: NextPage = () => {
                 <span>
                   We found {totalResults}{" "}
                   {totalResults > 1 ? "entries " : "entry "}
-                  for keywords {'"' + query + '"'}.
+                  for keywords {'"' + lastQuery + '"'}.
                 </span>
               ) : (
                 <span>We found no entry for keywords {'"' + query + '"'}.</span>
