@@ -1,0 +1,198 @@
+.person-page {
+  background-color: rgb(var(--shades-dark));
+}
+.person-page .person-container {
+  padding: 4rem 0;
+}
+.person-page .person-container .detail-wrapper {
+}
+.person-page .person-container .detail-wrapper .detail {
+  margin: auto;
+}
+.person-page .person-container .detail-wrapper .detail .person-poster {
+  padding: 1rem;
+}
+.person-page .person-container .detail-wrapper .detail .person-poster .person {
+  background-color: rgb(var(--primary-black));
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.person-page .person-container .detail .person-poster .person .person-image {
+  width: 100%;
+  text-align: center;
+  position: relative;
+  margin-bottom: -0.25rem;
+}
+
+.person-page
+  .person-container
+  .detail
+  .person-poster
+  .person
+  .person-image
+  > img {
+  width: 100%;
+  height: 100%;
+}
+
+.person-page
+  .person-container
+  .detail
+  .person-poster
+  .person
+  .person-image
+  .person-rating {
+  font-size: 0.875rem;
+  padding: 0.5rem 0.75rem;
+  position: absolute;
+  font-weight: 700;
+  right: 1rem;
+  bottom: 1.25rem;
+  border-radius: 0 1rem 0 1rem;
+  background-color: rgb(var(--primary-black));
+}
+.person-page .person-container .detail .person-detail {
+  padding: 1rem;
+  color: rgb(var(--white));
+}
+.person-page .person-container .detail .person-detail > .title {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.person-page .person-container .detail .person-detail .others {
+}
+
+.person-page .person-container .detail .person-detail .others > .genres {
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.person-page
+  .person-container
+  .detail
+  .person-detail
+  .others
+  > .genres
+  .genre-wrapper {
+  padding-right: 0.5rem;
+  padding-bottom: 0.125rem;
+}
+
+.person-page
+  .person-container
+  .detail
+  .person-detail
+  .others
+  > .genres
+  .genre-wrapper
+  .genre {
+  /* color: rgb(var(--black)); */
+  width: fit-content;
+  /* background-color: rgb(var(--white)); */
+}
+
+.person-page .person-container .detail .person-detail .others > .release {
+  margin-top: 0.5rem;
+}
+.person-page .person-container .detail .person-detail .others > .runtime {
+}
+
+.person-page .person-container .detail .person-detail .others > .revenue {
+  margin-top: 0.5rem;
+}
+
+.person-page .person-container .detail .person-detail .others > .budget {
+}
+
+.person-page .person-container .detail .person-detail .overview {
+  margin-top: 1rem;
+}
+
+.person-page .person-container .detail .person-detail .overview > .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+
+.person-page .person-container .detail .find-wrapper .find-youtube {
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  margin: auto;
+}
+
+.person-page .person-container .detail .find-wrapper.find-youtube {
+}
+.person-page .person-container .detail .find-wrapper .find-youtube > button {
+  display: flex;
+  font-size: 1.25rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color: rgb(var(--white));
+  padding: 1rem 1rem;
+  font-weight: 700;
+  transition: all 0.25s;
+  background: linear-gradient(
+    135deg,
+    rgb(var(--primary-theme)) 0%,
+    rgb(var(--secondary-theme)) 100%
+  );
+  border-radius: 1rem;
+  border: 0;
+  cursor: pointer;
+}
+.person-page
+  .person-container
+  .detail
+  .find-wrapper
+  .find-youtube
+  > button:hover {
+  opacity: 0.8;
+  transition: all 0.25s;
+}
+
+.person-page .person-container .detail .person-detail .production {
+  margin-top: 1rem;
+}
+.person-page .person-container .detail .person-detail .production .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding: 0.5rem 0;
+}
+.person-page .person-container .detail .person-detail .production .sub-title {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tweet-wrapper {
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.tweet-wrapper .tweet {
+}
+.tweet-wrapper .tweet:first-child {
+  padding-left: 0;
+}
+.tweet-wrapper .tweet:last-child {
+  padding-right: 0;
+}
+.tweet-wrapper .tweet .author {
+  font-weight: 700;
+}
+.tweet-wrapper .tweet .text {
+  padding: 0.5rem 0.5rem;
+  line-height: 1.5rem;
+  text-align: justify;
+  color: rgb(var(--white));
+}
+.tweet-wrapper .tweet .created {
+  float: right;
+  margin-left: auto;
+}

@@ -1,0 +1,116 @@
+:root {
+  --primary-black: 29, 29, 29;
+  --primary-theme: 232, 76, 61;
+  --secondary-theme: 247, 181, 0;
+
+  --black: 51, 51, 51;
+  --white: 255, 255, 255;
+
+  --shades-dark: 38, 50, 56;
+  --shades-normal: 117, 117, 117;
+  --shades-light: 189, 189, 189;
+  --shades-bright: 224, 224, 224;
+
+  --variant-dark: 198, 40, 40;
+  --variant-normal: 244, 67, 54;
+  --variant-light: 255, 160, 122;
+  --variant-bright: 255, 205, 210;
+
+  --other-green: 76, 175, 80;
+  --other-blue: 33, 150, 243;
+  --other-purple: 156, 39, 176;
+  --other-yellow: 255, 235, 59;
+  --other-grey-blue: 96, 125, 139;
+  --other-red: 200, 37, 37;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: rgb(var(--primary-black));
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.page-limit {
+  display: inherit;
+  align-items: inherit;
+  margin: auto;
+  width: 100%;
+  max-width: 1280px;
+}
+.adornment-button {
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  cursor: pointer;
+  border: 0;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  background-color: rgb(var(--primary-theme));
+  color: rgb(var(--white));
+  transition: all 0.15s;
+}
+.adornment-button:hover {
+  opacity: 0.8;
+  transition: all 0.15s;
+}
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+
+    --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
+    --secondary-glow: linear-gradient(
+      to bottom right,
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0),
+      rgba(1, 65, 255, 0.3)
+    );
+
+    --tile-start-rgb: 2, 13, 46;
+    --tile-end-rgb: 2, 5, 19;
+    --tile-border: conic-gradient(
+      #ffffff80,
+      #ffffff40,
+      #ffffff30,
+      #ffffff20,
+      #ffffff10,
+      #ffffff10,
+      #ffffff80
+    );
+
+    --callout-rgb: 20, 20, 20;
+    --callout-border-rgb: 108, 108, 108;
+    --card-rgb: 100, 100, 100;
+    --card-border-rgb: 200, 200, 200;
+  }
+} */
+
+/* body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+} */

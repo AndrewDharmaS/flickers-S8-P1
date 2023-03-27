@@ -1,0 +1,29 @@
+.footer {
+  text-align: center;
+  outline: none;
+  background-color: rgb(var(--primary-black));
+  color: rgb(var(--white));
+  font-weight: 700;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.footer .footer-wrapper {
+  width: 30rem;
+  margin: auto;
+}
+.footer .footer-wrapper .sentence {
+  padding-bottom: 1.5rem;
+  padding-top: 0.75rem;
+}
+.footer .footer-wrapper .copyright {
+  margin-bottom: 1.5rem;
+}
+.footer .footer-wrapper .return-top {
+  font-size: 2.25rem;
+  color: rgb(var(--secondary-theme));
+}
+
+.footer .footer-wrapper .return-top > svg {
+  cursor: pointer;
+}
