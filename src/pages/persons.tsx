@@ -58,7 +58,7 @@ const Person: NextPage = () => {
       setPersonData(data);
     };
     getPersonWeeks();
-  }, [adult, page]);
+  }, []);
   if (personData) {
     return (
       <section className={styles["persons-page"]}>

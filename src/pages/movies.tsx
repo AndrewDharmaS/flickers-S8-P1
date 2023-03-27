@@ -60,7 +60,7 @@ const Movie: NextPage = () => {
     };
     getMovieWeeks();
     getAllGenres();
-  }, [adult, page]);
+  }, []);
   if (movieData && allGenres) {
     return (
       <section className={styles["movies-page"]}>
