@@ -156,7 +156,7 @@ const searchPersons = async function searchPersons(
       "&sort_by=popularity.desc" +
       "&include_adult=" +
       adult +
-      "page=" +
+      "&page=" +
       page;
   } else {
     url =
