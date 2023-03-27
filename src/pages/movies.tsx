@@ -67,7 +67,7 @@ const Movie: NextPage = () => {
         <div className={styles["movies-container"] + " page-limit"}>
           <section className={styles["search-wrapper"]}>
             <div className={styles["search-feedback"]}>
-              {query == "" ? (
+              {lastQuery == "" ? (
                 <span>Tell me, what is it that {"you're"} seeking?</span>
               ) : totalResults > 0 ? (
                 <span>
@@ -76,7 +76,9 @@ const Movie: NextPage = () => {
                   for keywords {'"' + lastQuery + '"'}.
                 </span>
               ) : (
-                <span>We found no entry for keywords {'"' + query + '"'}.</span>
+                <span>
+                  We found no entry for keywords {'"' + lastQuery + '"'}.
+                </span>
               )}
             </div>
             <div className={styles["search-bar"]}>
