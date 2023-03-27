@@ -173,7 +173,7 @@ const Homepage: NextPage = () => {
         </section>
         <section className={styles["movies-container"]}>
           <div className={styles["movies"] + " page-limit"}>
-            <div className={styles["title"]}>Trending any This Week</div>
+            <div className={styles["title"]}>Trending Movies This Week</div>
             <div className={styles["movies-carousel"]}>
               <Carousel {...slickSettings}>
                 {movieWeekData &&
@@ -289,7 +289,7 @@ const Homepage: NextPage = () => {
 
         <section className={styles["persons-container"]}>
           <div className={styles["persons"] + " page-limit"}>
-            <div className={styles["title"]}>Trending any This Week</div>
+            <div className={styles["title"]}>Trending Persons This Week</div>
             <div className={styles["persons-carousel"]}>
               <Carousel {...slickSettings}>
                 {personWeekData &&
