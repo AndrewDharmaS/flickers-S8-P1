@@ -25,7 +25,7 @@ const searchRelevant = async function searchRelevant(
   try {
     const { data: res } = await axios.get(url);
     const processed = buildYoutubeURL(res);
-    console.log(processed);
+    // console.log(processed);
     return processed as any;
   } catch (error) {
     alert("Youtube API QUOTA REACHED");

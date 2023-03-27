@@ -171,7 +171,7 @@ const searchPersons = async function searchPersons(
       page;
   }
   const { data: res } = await axios.get(url);
-  console.log(res);
+  // console.log(res);
   const processed = PROCESS_PERSON(res);
   return processed as any;
 };
